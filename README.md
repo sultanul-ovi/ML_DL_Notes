@@ -1,8 +1,28 @@
 # Machine Learning and Deep Learning Notes
 ---
 
+# Data Processing Summary
 
+### Importing Libraries
+- Essential Python libraries including NumPy, Matplotlib, and Pandas are imported for handling arrays, plotting graphs, and manipulating datasets respectively.
 
+### Importing the Dataset
+- The process of importing a dataset using Pandas is demonstrated, focusing on separating it into independent features (`X`) and the dependent target variable (`y`).
+
+### Splitting the Dataset
+- The dataset is split into Training and Test sets using scikit-learn's `train_test_split` function, an essential step for model evaluation.
+
+### Handling Missing Data
+- Techniques for handling missing data are covered, highlighting the importance of proper data imputation.
+
+### Encoding Categorical Data
+- The notebooks discuss encoding categorical variables to convert them into a machine-readable format, using methods like OneHotEncoder and LabelEncoder.
+
+### Feature Scaling
+- Feature scaling methods, especially standardization, are emphasized to ensure all features contribute equally to the model's performance.
+
+### Print Transformed Data
+- Finally, the transformed feature sets are printed to verify the effectiveness of the preprocessing steps.
 ---
 
 # Machine Learning Regression Models
