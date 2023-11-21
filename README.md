@@ -33,7 +33,7 @@ model = LinearRegression()
 model.fit(X_train, y_train)
 
 predictions = model.predict(X_test)
-
+```
 ### Multiple Linear Regression
 
 #### Overview
@@ -73,7 +73,7 @@ X_train, X_test, y_train, y_test = train_test_split(X_poly, y, test_size=0.2)
 model = LinearRegression()
 model.fit(X_train, y_train)
 predictions = model.predict(X_test)
-
+```
 
 
 
@@ -92,7 +92,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
 model.fit(X_train, y_train)
 predictions = model.predict(X_test)
-
+```
 
 
 
@@ -112,7 +112,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 model.fit(X_train, y_train)
 predictions = model.predict(X_test)
 
-
+```
 
 ## Random Forest Regression
 
@@ -129,3 +129,4 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
 model.fit(X_train, y_train)
 predictions = model.predict(X_test)
+```
