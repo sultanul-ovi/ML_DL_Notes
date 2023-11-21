@@ -52,3 +52,79 @@ model.fit(X_train, y_train)
 
 predictions = model.predict(X_test)
 
+## Polynomial Regression
+
+### Overview
+Polynomial Regression is suitable for modeling the non-linear relationship between the dependent and independent variables. It extends linear regression by introducing polynomial terms into the regression equation.
+
+### Implementation in Python
+```python
+from sklearn.preprocessing import PolynomialFeatures
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+
+# Example with degree 2 polynomial
+poly = PolynomialFeatures(degree=2)
+X_poly = poly.fit_transform(X)
+
+X_train, X_test, y_train, y_test = train_test_split(X_poly, y, test_size=0.2)
+
+model = LinearRegression()
+model.fit(X_train, y_train)
+predictions = model.predict(X_test)
+
+
+
+
+## Support Vector Regression (SVR)
+
+### Overview
+SVR uses the same principles as SVM for classification but is applied to regression problems. It tries to fit the error within a certain threshold and can be effective in high-dimensional spaces.
+
+### Implementation in Python
+```python
+from sklearn.svm import SVR
+from sklearn.model_selection import train_test_split
+
+model = SVR(kernel='rbf') # Other kernels can be used
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+
+model.fit(X_train, y_train)
+predictions = model.predict(X_test)
+
+
+
+
+## Decision Tree Regression
+
+### Overview
+Decision Tree Regression uses a decision tree to model the decisions made and to make predictions. It is useful for non-linear relationships that are hard to model with other techniques.
+
+### Implementation in Python
+```python
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.model_selection import train_test_split
+
+model = DecisionTreeRegressor()
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+
+model.fit(X_train, y_train)
+predictions = model.predict(X_test)
+
+
+
+## Random Forest Regression
+
+### Overview
+Random Forest Regression is an ensemble learning method. It builds multiple decision trees and merges them together to get a more accurate and stable prediction.
+
+### Implementation in Python
+```python
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.model_selection import train_test_split
+
+model = RandomForestRegressor(n_estimators=100)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+
+model.fit(X_train, y_train)
+predictions = model.predict(X_test)
