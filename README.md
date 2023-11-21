@@ -1,21 +1,6 @@
-# ML_DL_Notes
+# Machine Learning and Deep Learning Notes
 
 
-Regression models (both linear and non-linear) are used for predicting a real value, like salary for example. If your independent variable is time, then you are forecasting future values, otherwise your model is predicting present but unknown values. Regression technique vary from Linear Regression to SVR and Random Forests Regression.
-
-In this part, you will understand and learn how to implement the following Machine Learning Regression models:
-
-Simple Linear Regression
-
-Multiple Linear Regression
-
-Polynomial Regression
-
-Support Vector for Regression (SVR)
-
-Decision Tree Regression
-
-Random Forest Regression
 
 # Machine Learning Regression Models
 ---
@@ -48,3 +33,22 @@ model = LinearRegression()
 model.fit(X_train, y_train)
 
 predictions = model.predict(X_test)
+
+### Multiple Linear Regression
+
+#### Overview
+Multiple Linear Regression uses several explanatory variables to predict the outcome of a response variable, establishing a linear relationship between them.
+
+#### Implementation
+```python
+from sklearn.linear_model import LinearRegression
+from sklearn.model_selection import train_test_split
+
+# Replace X and y with your dataset
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+
+model = LinearRegression()
+model.fit(X_train, y_train)
+
+predictions = model.predict(X_test)
+
