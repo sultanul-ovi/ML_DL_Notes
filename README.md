@@ -35,7 +35,9 @@ Regression models (both linear and non-linear) are used for predicting a real va
 ### Simple Linear Regression
 
 Simple Linear Regression uses a single feature to predict a response, assuming a linear relationship between input and output.
-
+- **When to Use**: Best for predicting an outcome with a single independent variable. Ideal for understanding the relationship between two continuous variables.
+- **When Not to Use**: Not suitable for complex relationships or datasets with multiple features influencing the outcome.
+  
 #### Implementation
 ```python
 from sklearn.linear_model import LinearRegression
@@ -140,3 +142,28 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 model.fit(X_train, y_train)
 predictions = model.predict(X_test)
 ```
+
+### Regression Models Usage Guide
+
+#### Simple Linear Regression
+
+
+#### Multiple Linear Regression
+- **When to Use**: Effective when multiple variables affect the dependent variable. Useful in cases like predicting house prices based on various features.
+- **When Not to Use**: Ineffective for non-linear relationships. Not recommended when independent variables are highly correlated (multicollinearity).
+
+#### Polynomial Regression
+- **When to Use**: Suitable for modeling non-linear relationships. Useful in cases where the relationship between variables is curvilinear.
+- **When Not to Use**: Avoid for simple linear relationships. Can lead to overfitting if the polynomial degree is set too high.
+
+#### Support Vector Regression (SVR)
+- **When to Use**: Effective in high-dimensional spaces and for datasets with non-linear relationships. Robust against outliers.
+- **When Not to Use**: Not ideal for very large datasets as it can become computationally intensive. Performance can significantly depend on the correct kernel choice.
+
+#### Decision Tree Regression
+- **When to Use**: Good for complex datasets with non-linear relationships. Easy to interpret and understand.
+- **When Not to Use**: Prone to overfitting, especially with noisy data. Not suitable for extrapolation beyond the range of the training data.
+
+#### Random Forest Regression
+- **When to Use**: Excellent for dealing with overfitting in decision trees. Works well with a large number of features and complex, non-linear relationships.
+- **When Not to Use**: Not the best choice for very high dimensional, sparse data. Can be computationally expensive and time-consuming for training and predictions.
