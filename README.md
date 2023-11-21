@@ -1,13 +1,11 @@
 # Machine Learning and Deep Learning Notes
----
 
-# Data Processing Summary
 
-### Importing Libraries
-- Essential Python libraries including NumPy, Matplotlib, and Pandas are imported for handling arrays, plotting graphs, and manipulating datasets respectively.
+# Data Processing
 
-### Importing the Dataset
-- The process of importing a dataset using Pandas is demonstrated, focusing on separating it into independent features (`X`) and the dependent target variable (`y`).
+- Importing Libraries: Essential Python libraries including NumPy, Matplotlib, and Pandas are imported for handling arrays, plotting graphs, and manipulating datasets respectively.
+
+- Importing the Dataset: The process of importing a dataset using Pandas is demonstrated, focusing on separating it into independent features (`X`) and the dependent target variable (`y`).
 
 ### Splitting the Dataset
 - The dataset is split into Training and Test sets using scikit-learn's `train_test_split` function, an essential step for model evaluation.
@@ -26,7 +24,7 @@
 ---
 
 # Machine Learning Regression Models
----
+
 Regression models (both linear and non-linear) are used for predicting a real value, like salary for example. If your independent variable is time, then you are forecasting future values, otherwise your model is predicting present but unknown values. Regression technique vary from Linear Regression to SVR and Random Forests Regression.
 
 ## Table of Contents
