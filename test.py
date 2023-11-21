@@ -28,10 +28,10 @@ z_score_u1 = (u1 - mu) / sigma
 z_score_u2 = (u2 - mu) / sigma
 
 # # Output the results
-# print("U statistic for Algorithm A (U1):", u1)
-# print("U statistic for Algorithm B (U2):", u2)
-# print("Z-score for U1:", z_score_u1)
-# print("Z-score for U2:", z_score_u2)
+print("U statistic for Algorithm A (U1):", u1)
+print("U statistic for Algorithm B (U2):", u2)
+print("Z-score for U1:", z_score_u1)
+print("Z-score for U2:", z_score_u2)
 
 # Critical values
 alpha = 0.05
