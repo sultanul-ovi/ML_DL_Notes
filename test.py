@@ -49,3 +49,11 @@ print("u1", conclusion_u1)
 print("u2", conclusion_u2)
 print("z1", conclusion_z1)
 print("z2", conclusion_z2)
+
+# Split the ranks back into two groups
+ranks_a = ranks[:len(algorithm_a_scores)]
+ranks_b = ranks[len(algorithm_a_scores):]
+# Print the ranks along with their corresponding algorithm
+print(list(zip(algorithm_a_scores, ranks_a)))
+print(list(zip(algorithm_b_scores, ranks_b)))
+
